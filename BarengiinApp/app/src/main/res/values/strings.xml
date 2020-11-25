@@ -12,6 +12,11 @@
     <string name="wisata">Wisata</string>
     <string name="today_news">Berita hari ini</string>
     <string name="recommmended_places">Destinasi Wisata Pilihan</string>
+    <string name="baca_petunjuk_keamanan_dulu_yuk">Baca petunjuk keamanan dulu, yuk!</string>
+    <string name="cara_mengatasi_keadaan_darurat">Cara mengatasi keadaan darurat</string>
+    <string name="barengiin_news">BARENGIIN NEWS</string>
+    <string name="waspada_penularan_covid_19">Waspada penularan COVID-19</string>
+    <string name="cek_pencegahannya_di_sini">Cek pencegahannya di sini</string>
     <!-- TODO: Remove or change this placeholder text -->
 
     <string-array name="newsImage">
