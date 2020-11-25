@@ -4,8 +4,45 @@
     <string name="title_riwayat">Riwayat</string>
     <string name="title_favorit">Favorit</string>
     <string name="title_profil">Profile</string>
+    <string name="main_title_content">Apa yang kamu butuhkan?</string>
+    <string name="this_is_favourite_fragment">fav_fragment</string>
+    <string name="this_is_history_fragment">history_fragment</string>
+    <string name="hello_blank_fragment">blank_fragment</string>
+    <string name="tumpangan">Tumpangan</string>
+    <string name="wisata">Wisata</string>
+    <string name="today_news">Berita hari ini</string>
+    <string name="recommmended_places">Destinasi Wisata Pilihan</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="this_is_history_fragment">This is History Fragment</string>
-    <string name="this_is_favourite_fragment">This is Favourite Fragment</string>
+
+    <string-array name="newsImage">
+        <item>@drawable/news1</item>
+        <item>@drawable/news2</item>
+        <item>@drawable/news3</item>
+        <item>@drawable/news4</item>
+        <item>@drawable/news5</item>
+    </string-array>
+
+    <string-array name="newsTitle">
+        <item>Menparekraf Siapkan Protokol New Normal untuk Tempat Wisata</item>
+        <item>Indonesia Keren Part 2, Destinasi Wisata Jawa Timur dengan Rasa Luar Negeri</item>
+        <item>Surga Tersembunyi di Leuwi Kanjeng Dalem Garut</item>
+        <item>Ridwan Kamil Bakal Tes Swab Wisatawan Secara Acak di Jabar</item>
+        <item>9 Tempat Wisata di Indonesia yang Bisa Kamu Kunjungi saat New Normal</item>
+    </string-array>
+
+    <string-array name="recommendedImage">
+        <item>@drawable/recommended1</item>
+        <item>@drawable/recommended2</item>
+        <item>@drawable/recommended3</item>
+        <item>@drawable/recommended4</item>
+        <item>@drawable/recommended5</item>
+    </string-array>
+
+    <string-array name="recommendedTitle">
+        <item>1. Pulau Komodo</item>
+        <item>2. Raja Ampat</item>
+        <item>3. Bali</item>
+        <item>4. Taman Laut Bunaken</item>
+        <item>5. Candi Borobudur</item>
+    </string-array>
 </resources>
