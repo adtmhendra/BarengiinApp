@@ -2,10 +2,7 @@ package com.hendra.mybottomnavigation.ui.home
 
 import android.content.res.TypedArray
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import android.widget.HorizontalScrollView
+import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.hendra.mybottomnavigation.R
@@ -31,6 +28,7 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        setHasOptionsMenu(true)
 
         rvNews.setHasFixedSize(true)
         allNews.addAll(getAllNewsItem())
@@ -81,5 +79,24 @@ class HomeFragment : Fragment() {
         rvDestinasiWisata.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
         val listRecommendedPlaceAdapter = ListRecommendedPlaceAdapter(places)
         rvDestinasiWisata.adapter = listRecommendedPlaceAdapter
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.actionbar_menu, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.activity -> {
+                // do intent here
+                true
+            }
+
+            R.id.chat -> {
+                // do intent here
+                true
+            }
+            else -> true
+        }
     }
 }

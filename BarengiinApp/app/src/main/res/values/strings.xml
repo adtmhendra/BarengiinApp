@@ -17,6 +17,7 @@
     <string name="barengiin_news">BARENGIIN NEWS</string>
     <string name="waspada_penularan_covid_19">Waspada penularan COVID-19</string>
     <string name="cek_pencegahannya_di_sini">Cek pencegahannya di sini</string>
+    <string name="aktivitas">aktivitas</string>
     <!-- TODO: Remove or change this placeholder text -->
 
     <string-array name="newsImage">
