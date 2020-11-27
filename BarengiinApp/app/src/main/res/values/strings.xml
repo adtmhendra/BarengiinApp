@@ -51,4 +51,21 @@
         <item>4. Taman Laut Bunaken</item>
         <item>5. Candi Borobudur</item>
     </string-array>
+
+    <string-array name="favoriteTitle">
+        <item>Pantai Kuta</item>
+        <item>Orchid Forest Cikole</item>
+        <item>Dieng</item>
+        <item>Danau Toba</item>
+        <item>Karimunjawa</item>
+    </string-array>
+
+    <string-array name="favoriteImage">
+        <item>@drawable/fav_kuta</item>
+        <item>@drawable/fav_orchid</item>
+        <item>@drawable/fav_dieng</item>
+        <item>@drawable/fav_toba</item>
+        <item>@drawable/fav_karimunjawa</item>
+    </string-array>
+
 </resources>
