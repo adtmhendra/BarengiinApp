@@ -1,9 +1,11 @@
 package com.hendra.mybottomnavigation.ui.home
 
+import android.content.Intent
 import android.content.res.TypedArray
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.hendra.mybottomnavigation.R
 import com.hendra.mybottomnavigation.adapter.ListNewsAdapter
@@ -79,24 +81,5 @@ class HomeFragment : Fragment() {
         rvDestinasiWisata.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
         val listRecommendedPlaceAdapter = ListRecommendedPlaceAdapter(places)
         rvDestinasiWisata.adapter = listRecommendedPlaceAdapter
-    }
-
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.actionbar_menu, menu)
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return when (item.itemId) {
-            R.id.activity -> {
-                // do intent here
-                true
-            }
-
-            R.id.chat -> {
-                // do intent here
-                true
-            }
-            else -> true
-        }
     }
 }

@@ -1,12 +1,16 @@
 package com.hendra.mybottomnavigation
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.hendra.mybottomnavigation.ui.home.NotificationActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,5 +26,26 @@ class MainActivity : AppCompatActivity() {
                 R.id.navigation_beranda, R.id.navigation_riwayat, R.id.navigation_favorit, R.id.navigation_profil))
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.actionbar_menu, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem):Boolean {
+        return when (item.itemId) {
+            R.id.activity -> {
+                val intentToNotification = Intent(this@MainActivity, NotificationActivity::class.java)
+                startActivity(intentToNotification)
+                return true
+            }
+
+            R.id.chat -> {
+                // do intent here
+                true
+            }
+            else -> true
+        }
     }
 }
