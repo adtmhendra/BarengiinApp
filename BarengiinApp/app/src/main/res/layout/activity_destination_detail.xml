@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.DestinationDetailFragment">
+    tools:context=".ui.home.DestinationDetailActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -18,15 +18,15 @@
             android:layout_marginStart="3dp"
             android:fontFamily="@font/poppins"
             android:text="Gunungkidul, DIY"
-            android:textColor="#000000"
+            android:textColor="#8A000000"
             app:layout_constraintBottom_toBottomOf="@+id/imageView8"
             app:layout_constraintStart_toEndOf="@+id/imageView8"
             app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
         <ImageView
-            android:id="@+id/imgDetailImageDestination"
+            android:id="@+id/imgDetDestination"
             android:layout_width="wrap_content"
-            android:layout_height="200dp"
+            android:layout_height="300dp"
             android:scaleType="centerCrop"
             android:src="@drawable/dest_kesirat"
             app:layout_constraintEnd_toEndOf="parent"
@@ -41,10 +41,10 @@
             android:layout_marginEnd="20dp"
             android:src="@drawable/ic_baseline_share_24"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/imgDetailImageDestination" />
+            app:layout_constraintTop_toTopOf="@+id/imgDetDestination" />
 
         <ImageView
-            android:id="@+id/imageView13"
+            android:id="@+id/btnBack"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_marginStart="20dp"
@@ -54,7 +54,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/tvDetailTitle"
+            android:id="@+id/tvDetTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -64,7 +64,7 @@
             android:textColor="#000000"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imgDetailImageDestination" />
+            app:layout_constraintTop_toBottomOf="@+id/imgDetDestination" />
 
         <TextView
             android:id="@+id/tvLocation"
@@ -77,14 +77,27 @@
             android:textColor="#000000"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvDetailDescription" />
+            app:layout_constraintTop_toBottomOf="@+id/tvDetDescription" />
 
         <TextView
-            android:id="@+id/tvDetailDescription"
+            android:id="@+id/tvLocation2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Foto"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDetailDescription2" />
+
+        <TextView
+            android:id="@+id/tvDetDescription"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="56dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
             android:fontFamily="@font/poppins"
             android:text="Detail Deskripsi"
@@ -92,27 +105,77 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvDetailTitle" />
+            app:layout_constraintTop_toBottomOf="@+id/tvDetTitle" />
 
         <ImageView
             android:id="@+id/imageView20"
             android:layout_width="wrap_content"
             android:layout_height="25dp"
-            android:layout_marginTop="27dp"
+            android:layout_marginTop="25dp"
             android:layout_marginEnd="20dp"
             android:src="@drawable/ic_baseline_favorite_border_24"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imgDetailImageDestination" />
+            app:layout_constraintTop_toBottomOf="@+id/imgDetDestination" />
 
         <ImageView
             android:id="@+id/imageView8"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_marginStart="20dp"
             android:layout_marginTop="3dp"
             android:src="@drawable/ic_baseline_location_on_24"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvLocation" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="185dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="3dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLocation2"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/imageView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/sedahan" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_width="185dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="8dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/cardView2"
+            app:layout_constraintStart_toEndOf="@+id/cardView2"
+            app:layout_constraintTop_toTopOf="@+id/cardView2"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/imageView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/sedahan2" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Lihat Lebih"
+            android:textColor="#456123"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/cardView3"
+            app:layout_constraintEnd_toEndOf="@+id/cardView3" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

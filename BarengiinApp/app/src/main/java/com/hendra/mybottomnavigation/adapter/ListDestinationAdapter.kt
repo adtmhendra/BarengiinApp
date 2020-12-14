@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.hendra.mybottomnavigation.R
 import com.hendra.mybottomnavigation.model.Destination
-import com.hendra.mybottomnavigation.ui.home.DestinationDetailFragment
+import com.hendra.mybottomnavigation.ui.home.DestinationDetailActivity
 import kotlinx.android.synthetic.main.destination_rows.view.*
 
 class ListDestinationAdapter(private val listDestination: ArrayList<Destination>) : RecyclerView.Adapter<ListDestinationAdapter.DestinationViewHolder>() {
@@ -27,8 +27,8 @@ class ListDestinationAdapter(private val listDestination: ArrayList<Destination>
         holder.itemView.setOnClickListener{ view ->
             Toast.makeText(view.context, destination.title, Toast.LENGTH_SHORT).show()
 
-            val moveIntentWithObject = Intent(view.context, DestinationDetailFragment::class.java)
-            moveIntentWithObject.putExtra(DestinationDetailFragment.EXTRA_DATA, destination)
+            val moveIntentWithObject = Intent(view.context, DestinationDetailActivity::class.java)
+            moveIntentWithObject.putExtra(DestinationDetailActivity.EXTRA_DATA, destination)
             view.context.startActivity(moveIntentWithObject)
         }
     }
