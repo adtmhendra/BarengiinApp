@@ -31,12 +31,11 @@
         android:id="@+id/textView60"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
         android:layout_marginTop="13dp"
         android:fontFamily="@font/roboto_bold"
         android:text="5 BALASAN"
         android:textColor="#3376D9"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView27"
         app:layout_constraintTop_toBottomOf="@+id/imageView28" />
 
     <TextView
@@ -87,12 +86,11 @@
         android:id="@+id/tvBalasan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
         android:layout_marginTop="13dp"
         android:fontFamily="@font/roboto_bold"
         android:text="3 BALASAN"
         android:textColor="#3376D9"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView24"
         app:layout_constraintTop_toBottomOf="@+id/imageView25" />
 
     <TextView
@@ -142,9 +140,8 @@
         android:id="@+id/imageView27"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView58"
         app:layout_constraintTop_toBottomOf="@+id/textView58"
         app:srcCompat="@drawable/ic_baseline_thumb_up_alt_24" />
 
@@ -152,26 +149,24 @@
         android:id="@+id/textView51"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/roboto"
         android:text="Info dong untuk biaya masuknya berapa ya?"
         android:textColor="#000000"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/avatar2"
         app:layout_constraintTop_toBottomOf="@+id/avatar2" />
 
     <TextView
         android:id="@+id/textView58"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/roboto"
         android:text="Kondisi jalan menuju pantainya bagaimana?"
         android:textColor="#000000"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/avatar3"
         app:layout_constraintTop_toBottomOf="@+id/avatar3" />
 
     <TextView

@@ -182,24 +182,26 @@
             android:id="@+id/textView37"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
             android:layout_marginBottom="4dp"
             android:fontFamily="@font/poppins_medium"
             android:text="Lihat Lebih"
             android:textColor="#456123"
             android:textSize="16sp"
             app:layout_constraintBottom_toTopOf="@+id/cardView3"
-            app:layout_constraintEnd_toEndOf="@+id/cardView3" />
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <TextView
             android:id="@+id/tvLihatLebih"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
             android:fontFamily="@font/poppins_medium"
             android:text="Lihat Lebih"
             android:textColor="#456123"
             android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="@+id/cardView3"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cardView3" />
 
         <de.hdodenhof.circleimageview.CircleImageView
