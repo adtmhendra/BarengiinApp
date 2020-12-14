@@ -1,5 +1,6 @@
 package com.hendra.mybottomnavigation.ui.home
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -28,11 +29,16 @@ class DestinationDetailActivity : AppCompatActivity(), View.OnClickListener {
         Glide.with(this).load(destination?.image).into(imgDetDestination)
 
         btnBack.setOnClickListener(this)
+        tvLihatLebih.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
         when(v.id) {
             R.id.btnBack -> finish()
+            R.id.tvLihatLebih -> {
+                val intent = Intent(this@DestinationDetailActivity, DiscussionActivity::class.java)
+                startActivity(intent)
+            }
         }
     }
 }
