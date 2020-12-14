@@ -11,8 +11,9 @@
         android:label="@string/title_beranda"
         tools:layout="@layout/fragment_home" >
         <action
-            android:id="@+id/action_navigation_beranda_to_notficationFragment"
-            app:destination="@id/notficationFragment" />
+            android:id="@+id/action_navigation_beranda_to_destinationFragment"
+            app:destination="@id/destinationFragment"
+            app:enterAnim="@anim/fragment_open_enter" />
     </fragment>
 
     <fragment
@@ -43,8 +44,8 @@
         android:label="fragment_history_detail"
         tools:layout="@layout/fragment_history_detail" />
     <fragment
-        android:id="@+id/notficationFragment"
-        android:name="com.hendra.mybottomnavigation.ui.home.NotficationFragment"
-        android:label="NotficationFragment" />
+        android:id="@+id/destinationFragment"
+        android:name="com.hendra.mybottomnavigation.ui.home.DestinationFragment"
+        android:label="DestinationFragment" />
 
 </navigation>

@@ -1,6 +1,5 @@
 package com.hendra.mybottomnavigation.ui.home
 
-import android.content.Intent
 import android.content.res.TypedArray
 import android.os.Bundle
 import android.view.*
@@ -39,6 +38,8 @@ class HomeFragment : Fragment() {
         rvDestinasiWisata.setHasFixedSize(true)
         places.addAll(getAllRecommendedPlaceItem())
         showRecyclerListPlaces()
+
+        navigation()
     }
 
     private fun getAllNewsItem(): ArrayList<News> {
@@ -81,5 +82,11 @@ class HomeFragment : Fragment() {
         rvDestinasiWisata.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
         val listRecommendedPlaceAdapter = ListRecommendedPlaceAdapter(places)
         rvDestinasiWisata.adapter = listRecommendedPlaceAdapter
+    }
+
+    private fun navigation() {
+        cardViewWisata.setOnClickListener(
+            Navigation.createNavigateOnClickListener(R.id.action_navigation_beranda_to_destinationFragment)
+        )
     }
 }

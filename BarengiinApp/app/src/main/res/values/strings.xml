@@ -68,4 +68,29 @@
         <item>@drawable/fav_karimunjawa</item>
     </string-array>
 
+    <string-array name="destinationTitle">
+        <item>Pantai Sedahan</item>
+        <item>Pantai Nglambor</item>
+        <item>Bukit Pengilon</item>
+        <item>Pantai Timang</item>
+        <item>Pantai Kesirat</item>
+    </string-array>
+
+    <string-array name="destinationDescription">
+        <item>Pantai Sedahan merupakan salah satu pantai berpasir putih di antara barisan pantai pantai indah Gunungkidul. Kepopuleran pantai ini terutama diperoleh dari bentangan Pasir pantai ini berwarna putih. Dan juga adanya dua tebing karang menjorok ke tengah laut, membentengi sisi kanan dan kiri pantai. Pengunjung juga dapat menuju ke puncak tebing karang.</item>
+        <item>Berbeda dengan pantai-pantai Gunungkidul lainnya, di Pantai Nglambor kamu tidak hanya bisa berenang namun juga bisa menjajal aktivitas snorkeling. Bermodalkan snorkel, kamu bisa melihat indahnya kehidupan di bawah laut. Tak perlu takut terhempas ombak ganas, sebab jauh di depan ada dua pulau karang berbentuk kura-kura raksasa yang siap menjadi penjaga.</item>
+        <item>Bukit Pengilon adalah salah satu spot wisata alam Jogja yang memiliki keindahan yang luar biasa. Meskipun bukit, spot wisata ini berada di area Pantai di Jogja yang berada di pesisir selatan, yaitu daerah Gunung Kidul. Biasanya, spot wisata alam yang asri berada di area utara Jogja dekat Gunung Merapi atau berada di barat Jogja.</item>
+        <item>Pantai Timang terletak di Pedukuhan Danggolo, Desa Purwodadi, Kecamatan Tepus, Kabupaten Gunung Kidul, Yogyakarta. Daya tarik wisata ini justru bukan terletak di pantai ataupun keindahan lautnya, tapi para pengunjung lebih tertarik akan wahana dan pulau kecil yang ada di sebrang pantai. Sebenarnya bukanlah gondola dan jembatan gantung yang di tekankan untuk menjadi daya tarik wisata di pantai ini.</item>
+        <item>Meski tidak memiliki hamparan pasir putih nan lembut, Pantai Kesirat selalu berhasil memikat siapa pun yang datang. Di pantai yang berupa tebing ini, kamu akan disuguhi pemandangan senja yang menawan lengkap dengan pohon tunggal yang menjadi ikon Pantai ini.</item>
+    </string-array>
+
+
+    <string-array name="destinationImage">
+        <item>@drawable/dest_sedahan</item>
+        <item>@drawable/dest_nglambor</item>
+        <item>@drawable/dest_pengilon</item>
+        <item>@drawable/dest_timang</item>
+        <item>@drawable/dest_kesirat</item>
+    </string-array>
+
 </resources>
