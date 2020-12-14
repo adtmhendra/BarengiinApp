@@ -88,5 +88,9 @@ class HomeFragment : Fragment() {
         cardViewWisata.setOnClickListener(
             Navigation.createNavigateOnClickListener(R.id.action_navigation_beranda_to_destinationFragment)
         )
+
+        cardViewTumpangan.setOnClickListener(
+            Navigation.createNavigateOnClickListener(R.id.action_navigation_beranda_to_tumpanganActivity)
+        )
     }
 }

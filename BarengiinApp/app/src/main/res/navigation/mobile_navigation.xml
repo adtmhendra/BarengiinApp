@@ -14,6 +14,9 @@
             android:id="@+id/action_navigation_beranda_to_destinationFragment"
             app:destination="@id/destinationFragment"
             app:enterAnim="@anim/fragment_open_enter" />
+        <action
+            android:id="@+id/action_navigation_beranda_to_tumpanganActivity"
+            app:destination="@id/tumpanganActivity" />
     </fragment>
 
     <fragment
@@ -37,7 +40,11 @@
         android:id="@+id/navigation_profil"
         android:name="com.hendra.mybottomnavigation.ui.profile.ProfileFragment"
         android:label="@string/title_profil"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_navigation_profil_to_friendFragment"
+            app:destination="@id/friendFragment" />
+    </fragment>
     <fragment
         android:id="@+id/historyDetailFragment"
         android:name="com.hendra.mybottomnavigation.ui.history.HistoryDetailFragment"
@@ -47,5 +54,14 @@
         android:id="@+id/destinationFragment"
         android:name="com.hendra.mybottomnavigation.ui.home.DestinationFragment"
         android:label="DestinationFragment" />
+    <activity
+        android:id="@+id/tumpanganActivity"
+        android:name="com.hendra.mybottomnavigation.ui.home.TumpanganActivity"
+        android:label="TumpanganActivity" />
+    <fragment
+        android:id="@+id/friendFragment"
+        android:name="com.hendra.mybottomnavigation.ui.profile.FriendFragment"
+        android:label="fragment_friend"
+        tools:layout="@layout/fragment_friend" />
 
 </navigation>

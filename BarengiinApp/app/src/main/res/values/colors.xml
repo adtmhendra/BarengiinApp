@@ -4,4 +4,6 @@
     <color name="colorPrimaryDark">#C4C4C4</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="colorButton">#204362</color>
+    <color name="colorButtonCariTumpangan">#002F35</color>
+    <color name="colorButtonBeriTumpangan">#E5E9EA</color>
 </resources>
