@@ -40,11 +40,6 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intentToNotification)
                 return true
             }
-
-            R.id.chat -> {
-                // do intent here
-                true
-            }
             else -> true
         }
     }

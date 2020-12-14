@@ -6,4 +6,6 @@
     <color name="colorButton">#204362</color>
     <color name="colorButtonCariTumpangan">#002F35</color>
     <color name="colorButtonBeriTumpangan">#E5E9EA</color>
+    <color name="colorButtonReport">#FA1414</color>
+    <color name="colorWhite">#FFFFFF</color>
 </resources>

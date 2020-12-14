@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.home.TumpanganActivity"></activity>
+        <activity android:name=".ui.home.EmergencyActivity"></activity>
+        <activity android:name=".ui.home.DetailTumpanganActivity" />
+        <activity android:name=".ui.home.RequestActivity" />
+        <activity android:name=".ui.home.DestinationResultActivity" />
+        <activity android:name=".ui.home.TumpanganActivity" />
         <activity android:name=".ui.home.ReplyActivity" />
         <activity android:name=".ui.home.DiscussionActivity" />
         <activity android:name=".ui.home.DestinationDetailActivity" />

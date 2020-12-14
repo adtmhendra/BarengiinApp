@@ -15,10 +15,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/circleImageView4" />
+        app:layout_constraintTop_toBottomOf="@+id/imgDriverProfile" />
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/circleImageView4"
+        android:id="@+id/imgDriverProfile"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="20dp"
@@ -38,8 +38,8 @@
         android:text="Guy Hawkins"
         android:textColor="#000000"
         android:textSize="18sp"
-        app:layout_constraintStart_toEndOf="@+id/circleImageView4"
-        app:layout_constraintTop_toTopOf="@+id/circleImageView4" />
+        app:layout_constraintStart_toEndOf="@+id/imgDriverProfile"
+        app:layout_constraintTop_toTopOf="@+id/imgDriverProfile" />
 
     <TextView
         android:id="@+id/textView76"
@@ -50,7 +50,7 @@
         android:fontFamily="@font/poppins_medium"
         android:text="Bandung"
         android:textSize="16sp"
-        app:layout_constraintStart_toEndOf="@+id/circleImageView4"
+        app:layout_constraintStart_toEndOf="@+id/imgDriverProfile"
         app:layout_constraintTop_toBottomOf="@+id/textView73" />
 
     <Button

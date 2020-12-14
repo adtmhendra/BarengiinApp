@@ -10,7 +10,7 @@
 
     <item
         android:id="@+id/chat"
-        android:icon="@drawable/ic_baseline_chat_24"
+        android:icon="@drawable/ic_baseline_sms_24"
         android:title="@string/aktivitas"
         app:showAsAction="always" />
 

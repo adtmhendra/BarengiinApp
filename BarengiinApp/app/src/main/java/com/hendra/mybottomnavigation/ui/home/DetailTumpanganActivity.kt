@@ -5,23 +5,23 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.hendra.mybottomnavigation.R
-import kotlinx.android.synthetic.main.activity_tumpangan.*
+import kotlinx.android.synthetic.main.activity_detail_tumpangan.*
 
-class TumpanganActivity : AppCompatActivity(), View.OnClickListener {
+class DetailTumpanganActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_tumpangan)
+        setContentView(R.layout.activity_detail_tumpangan)
         supportActionBar?.hide()
 
-        btnBackTumpangan.setOnClickListener(this)
-        btnPesanTumpangan.setOnClickListener(this)
+        btnBatalkanPesanan.setOnClickListener(this)
+        btnEmergency.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
         when(v.id) {
-            R.id.btnBackTumpangan -> finish()
-            R.id.btnPesanTumpangan -> {
-                val intent = Intent(this@TumpanganActivity, DestinationResultActivity::class.java)
+            R.id.btnBatalkanPesanan -> finish()
+            R.id.btnEmergency -> {
+                val intent = Intent(this, EmergencyActivity::class.java)
                 startActivity(intent)
             }
         }

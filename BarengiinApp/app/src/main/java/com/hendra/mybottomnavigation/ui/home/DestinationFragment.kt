@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.hendra.mybottomnavigation.R
 import com.hendra.mybottomnavigation.adapter.ListDestinationAdapter
@@ -26,6 +27,7 @@ class DestinationFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        (activity as AppCompatActivity).supportActionBar?.title = "Destinasi Wisata"
 
         showRecyclerListDestination()
     }
