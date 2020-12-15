@@ -30,6 +30,7 @@ class DestinationDetailActivity : AppCompatActivity(), View.OnClickListener {
 
         btnBack.setOnClickListener(this)
         tvLihatLebih.setOnClickListener(this)
+        btnCariTumpanganDetail.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
@@ -37,6 +38,10 @@ class DestinationDetailActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btnBack -> finish()
             R.id.tvLihatLebih -> {
                 val intent = Intent(this@DestinationDetailActivity, DiscussionActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.btnCariTumpanganDetail -> {
+                val intent = Intent(this, DestinationResultActivity::class.java)
                 startActivity(intent)
             }
         }

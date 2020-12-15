@@ -29,9 +29,10 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="3dp"
-            android:fontFamily="@font/poppins"
+            android:fontFamily="@font/poppins_medium"
             android:text="Gunungkidul, DIY"
             android:textColor="#99000000"
+            android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="@+id/imageView8"
             app:layout_constraintStart_toEndOf="@+id/imageView8"
             app:layout_constraintTop_toTopOf="@+id/imageView8" />
@@ -266,11 +267,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:tint="#8A000000"
             app:layout_constraintBottom_toBottomOf="@+id/imageView22"
             app:layout_constraintStart_toEndOf="@+id/imageView22"
             app:layout_constraintTop_toTopOf="@+id/imageView22"
-            app:srcCompat="@drawable/ic_baseline_sms_24" />
+            app:srcCompat="@drawable/ic_baseline_sms_24"
+            app:tint="#8A000000" />
 
         <TextView
             android:id="@+id/textView47"

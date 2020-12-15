@@ -19,8 +19,8 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imgDriverProfile"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:src="@drawable/guy_hawkins"
@@ -33,11 +33,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="4dp"
         android:fontFamily="@font/poppins_medium"
         android:text="Guy Hawkins"
         android:textColor="#000000"
-        android:textSize="18sp"
+        android:textSize="17sp"
         app:layout_constraintStart_toEndOf="@+id/imgDriverProfile"
         app:layout_constraintTop_toTopOf="@+id/imgDriverProfile" />
 
@@ -46,10 +46,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="1dp"
         android:fontFamily="@font/poppins_medium"
         android:text="Bandung"
-        android:textSize="16sp"
+        android:textSize="15sp"
         app:layout_constraintStart_toEndOf="@+id/imgDriverProfile"
         app:layout_constraintTop_toBottomOf="@+id/textView73" />
 
