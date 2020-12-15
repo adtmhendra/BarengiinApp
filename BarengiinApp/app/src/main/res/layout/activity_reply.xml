@@ -124,8 +124,8 @@
         android:text="Info dong untuk biaya masuknya berapa ya?"
         android:textColor="#000000"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/avatar4"
-        app:layout_constraintTop_toBottomOf="@+id/avatar4" />
+        app:layout_constraintStart_toStartOf="@+id/imgPerson"
+        app:layout_constraintTop_toBottomOf="@+id/imgPerson" />
 
     <TextView
         android:id="@+id/textView56"
@@ -136,12 +136,12 @@
         android:text="Muhammad Ardiyansyah"
         android:textColor="#000000"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/avatar4"
-        app:layout_constraintStart_toEndOf="@+id/avatar4"
-        app:layout_constraintTop_toTopOf="@+id/avatar4" />
+        app:layout_constraintBottom_toBottomOf="@+id/imgPerson"
+        app:layout_constraintStart_toEndOf="@+id/imgPerson"
+        app:layout_constraintTop_toTopOf="@+id/imgPerson" />
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/avatar4"
+        android:id="@+id/imgPerson"
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:layout_marginStart="20dp"

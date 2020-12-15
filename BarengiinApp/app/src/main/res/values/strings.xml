@@ -20,6 +20,7 @@
     <string name="aktivitas">aktivitas</string>
     <string name="tambah_diskusi">Tambah diskusi</string>
     <string name="laporkan">Laporkan</string>
+    <string name="direct_message">Direct Message</string>
     <!-- TODO: Remove or change this placeholder text -->
 
     <string-array name="newsImage">

@@ -10,6 +10,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.hendra.mybottomnavigation.ui.home.DirectMessageActivity
 import com.hendra.mybottomnavigation.ui.home.NotificationActivity
 
 class MainActivity : AppCompatActivity() {
@@ -38,6 +39,11 @@ class MainActivity : AppCompatActivity() {
             R.id.activity -> {
                 val intentToNotification = Intent(this@MainActivity, NotificationActivity::class.java)
                 startActivity(intentToNotification)
+                return true
+            }
+            R.id.chat -> {
+                val intent = Intent(this, DirectMessageActivity::class.java)
+                startActivity(intent)
                 return true
             }
             else -> true

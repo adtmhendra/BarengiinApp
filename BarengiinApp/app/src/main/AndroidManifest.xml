@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.home.EmergencyActivity"></activity>
+        <activity android:name=".ui.home.AddFriendActivity"></activity>
+        <activity android:name=".ui.home.DirectMessageActivity" />
+        <activity android:name=".ui.home.EmergencyActivity" />
         <activity android:name=".ui.home.DetailTumpanganActivity" />
         <activity android:name=".ui.home.RequestActivity" />
         <activity android:name=".ui.home.DestinationResultActivity" />
