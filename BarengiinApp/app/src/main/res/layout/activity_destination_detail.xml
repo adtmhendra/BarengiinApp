@@ -31,7 +31,7 @@
             android:layout_marginStart="3dp"
             android:fontFamily="@font/poppins"
             android:text="Gunungkidul, DIY"
-            android:textColor="#8A000000"
+            android:textColor="#99000000"
             app:layout_constraintBottom_toBottomOf="@+id/imageView8"
             app:layout_constraintStart_toEndOf="@+id/imageView8"
             app:layout_constraintTop_toTopOf="@+id/imageView8" />
