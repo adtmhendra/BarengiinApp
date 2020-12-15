@@ -18,6 +18,8 @@
     <string name="waspada_penularan_covid_19">Waspada penularan COVID-19</string>
     <string name="cek_pencegahannya_di_sini">Cek pencegahannya di sini</string>
     <string name="aktivitas">aktivitas</string>
+    <string name="tambah_diskusi">Tambah diskusi</string>
+    <string name="laporkan">Laporkan</string>
     <!-- TODO: Remove or change this placeholder text -->
 
     <string-array name="newsImage">
@@ -45,11 +47,11 @@
     </string-array>
 
     <string-array name="recommendedTitle">
-        <item>1. Pulau Komodo</item>
-        <item>2. Raja Ampat</item>
-        <item>3. Bali</item>
-        <item>4. Taman Laut Bunaken</item>
-        <item>5. Candi Borobudur</item>
+        <item>Pulau Komodo</item>
+        <item>Raja Ampat</item>
+        <item>Bali</item>
+        <item>Taman Laut Bunaken</item>
+        <item>Candi Borobudur</item>
     </string-array>
 
     <string-array name="favoriteTitle">

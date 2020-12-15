@@ -3,6 +3,8 @@ package com.hendra.mybottomnavigation.ui.home
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import com.hendra.mybottomnavigation.R
 import kotlinx.android.synthetic.main.activity_discussion.*
@@ -23,5 +25,10 @@ class DiscussionActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
             }
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.discussion_menu, menu)
+        return true
     }
 }
